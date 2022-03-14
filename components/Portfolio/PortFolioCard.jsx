@@ -55,7 +55,7 @@ const PortFolioCard = ({ src, title, desc, keywords, github = false }) => {
           {keywords?.length > 3 && <p className={styles.ellipsis}>...</p>}
         </div>
         <h3 className={styles.title}>{title}</h3>
-        <p className={styles.description}>{desc}</p>
+        <div className={styles.description}>{desc}</div>
       </div>
     </div>
   );

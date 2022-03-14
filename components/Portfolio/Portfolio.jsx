@@ -13,6 +13,8 @@ import lcddHome from "/public/pictures/lcdd/homepage.png";
 import openAPI from "/public/pictures/lcdd/openAPI.png";
 import nextLogo from "/public/pictures/Next/Nextjs-logo.png";
 
+import classNames from "classnames";
+
 const cards = [
   {
     src: lcddHome,
@@ -103,7 +105,7 @@ const Portfolio = () => {
   }, []);
 
   return (
-    <section className={styles.portfolio}>
+    <section className={classNames(styles.portfolio, "padding1rem")}>
       <h2 className={styles.title}>Portfolio</h2>
       <div className={styles.portfolioIntro}>
         <p> Quelques une de mes réalisations.</p>

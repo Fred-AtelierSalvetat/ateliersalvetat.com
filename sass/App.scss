@@ -1,19 +1,6 @@
 @use "params" as *;
-@use "typo";
-
-@keyframes progressive-margin-2rem {
-  0% {
-    margin: 0;
-  }
-  100% {
-    margin: 2rem;
-  }
-}
-
-.progressive-margin-2rem {
-  --tt-key: progressive-margin-2rem;
-  margin: 2rem;
-}
+@forward "typo";
+@forward "utility";
 
 //Utility classes
 .centerText {

@@ -11,22 +11,23 @@ import styles from "./footer.module.scss";
 
 const Footer = () => {
   return (
-    <div className={styles.footer}>
-      <div className={styles.topInnerBox}>
+    <div className={classNames(styles.footer, "padding1rem")}>
+      <div className={styles.brand}>
         <Brand whiteColorName />
-        <div className={classNames(styles.linksbox, "progressive-margin-2rem")}>
-          <a target="_self" href={linkedIn}>
-            <LinkedInIcon />
-          </a>
-          <a target="_self" href={github}>
-            <GitHubIcon />
-          </a>
-          <a href={`mailto:${email}`}>
-            <EmailIcon />
-          </a>
-        </div>
       </div>
-      <div className={styles.bottomInnerBox}>
+      <div className={classNames(styles.linksbox, "margin2rem")}>
+        <a target="_self" href={linkedIn}>
+          <LinkedInIcon />
+        </a>
+        <a target="_self" href={github}>
+          <GitHubIcon />
+        </a>
+        <a href={`mailto:${email}`}>
+          <EmailIcon />
+        </a>
+      </div>
+
+      <div className={styles.links}>
         <Link href="/licences">
           <a>Licences libres utilisées</a>
         </Link>

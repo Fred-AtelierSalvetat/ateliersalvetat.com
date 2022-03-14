@@ -1,0 +1,47 @@
+@use "sass:string";
+
+// Avoid overlap with other typetura animation
+// -> MUST USE dedicated div
+
+$sizes: (
+  // margin
+  5rem,
+  4rem,
+  3rem,
+  2rem,
+  1rem
+);
+
+@each $size in $sizes {
+  //Margins
+  $keyframe: string.unique-id();
+  @keyframes #{$keyframe} {
+    0% {
+      margin: 0;
+    }
+    100% {
+      margin: #{$size};
+    }
+  }
+  .margin#{$size} {
+    --tt-key: #{$keyframe};
+    //Fallback
+    margin: calc(#{$size} * 0.75);
+  }
+
+  //Paddings
+  $keyframe: string.unique-id();
+  @keyframes #{$keyframe} {
+    0% {
+      padding: 0;
+    }
+    100% {
+      padding: #{$size};
+    }
+  }
+  .padding#{$size} {
+    --tt-key: #{$keyframe};
+    //Fallback
+    padding: calc(#{$size} * 0.75);
+  }
+}

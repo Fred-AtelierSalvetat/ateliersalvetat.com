@@ -1,4 +1,4 @@
-@import "../../sass/params";
+@use "../../sass/params" as *;
 
 .brand {
   width: fit-content;
@@ -6,6 +6,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+
   p {
     margin: 0;
     white-space: nowrap;
