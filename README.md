@@ -5,4 +5,4 @@
 [![typetura](https://img.shields.io/badge/typeset%20with-typetura-129681.svg)](https://typetura.com/)
 [![Libraries.io dependency status for GitHub repo](https://img.shields.io/librariesio/github/Fred-AtelierSalvetat/ateliersalvetat.com)](https://libraries.io/github/Fred-AtelierSalvetat/ateliersalvetat.com)
 
-Personnal site and portfolio
+Skills and portfolio presentation
