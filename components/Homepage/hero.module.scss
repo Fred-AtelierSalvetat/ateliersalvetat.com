@@ -1,13 +1,12 @@
-@import "../../sass/params";
+@use "../../sass/params" as *;
 
 .hero {
   .intro {
     text-align: center;
-    padding-top: 1rem;
-    @media (min-width: 768px) {
-      padding-top: 3rem;
-    }
     background-color: $white;
+    h1 {
+      color: $secondary;
+    }
     figure {
       margin: 3.75rem 0;
       .portrait {
