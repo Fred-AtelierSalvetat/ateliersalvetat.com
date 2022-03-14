@@ -31,7 +31,7 @@ const PortFolioCard = ({ src, title, desc, keywords, github = false }) => {
   // ];
 
   return (
-    <div className={`typetura ${styles.card}`}>
+    <div className={styles.card}>
       <div onClick={() => console.log("Click")} className={styles.thumbnail}>
         <Image
           priority

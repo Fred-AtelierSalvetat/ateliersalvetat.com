@@ -9,7 +9,7 @@ const Skills = () => {
   return (
     <section className={styles.skills}>
       <div className={styles.skillframe}>
-        <div className={`typetura ${styles.skillbox}`}>
+        <div className={styles.skillbox}>
           <Frontend />
           <h2>Développement Front-End</h2>
           <p className={styles.box__text}>
@@ -46,7 +46,7 @@ const Skills = () => {
           </ul>
         </div>
 
-        <div className={`typetura ${styles.skillbox}`}>
+        <div className={styles.skillbox}>
           <AdditionalSkills />
           <h2>Side skills</h2>
           <p className={styles.box__text}>

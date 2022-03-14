@@ -30,6 +30,7 @@ const cards = [
         <li>Tests unitaires/integ</li>
       </ul>
     ),
+    page: "/lcdd",
   },
   {
     github: true,
