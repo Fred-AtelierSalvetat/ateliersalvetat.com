@@ -1,0 +1,47 @@
+@use "params" as *;
+@use "typo";
+
+@keyframes progressive-margin-2rem {
+  0% {
+    margin: 0;
+  }
+  100% {
+    margin: 2rem;
+  }
+}
+
+.progressive-margin-2rem {
+  --tt-key: progressive-margin-2rem;
+  margin: 2rem;
+}
+
+//Utility classes
+.centerText {
+  text-align: center;
+}
+
+.App {
+  .testimonialsBox {
+    padding: $pageVerticalPadding $pageHorizontalPadding;
+    .testimonial {
+      margin: 3rem 0;
+      img {
+        border-radius: 50%;
+        width: 12rem;
+        height: 12rem;
+      }
+      .signature {
+        font-size: 1.25rem;
+        color: $black;
+        font-weight: bold;
+        margin: 0;
+      }
+      .titres {
+        color: $black;
+        font-size: 1rem;
+        font-weight: normal;
+        margin: 0;
+      }
+    }
+  }
+}

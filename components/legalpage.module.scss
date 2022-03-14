@@ -1,0 +1,14 @@
+@import "../sass/params";
+
+.legalpage {
+  margin-block: $pageVerticalPadding;
+  .titleblock {
+    margin-bottom: $pageVerticalPadding;
+    h1 {
+      text-align: center;
+    }
+  }
+  h2 {
+    margin-top: $pageVerticalPadding;
+  }
+}

@@ -1,0 +1,19 @@
+.regular-font {
+  font-family: "Roboto Slab", serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.accent-font {
+  font-family: "Open Sans", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.brand-font {
+  font-family: "GloryCulture-AltRegular-Subset", Helvetica, Arial, Sans-Serif;
+  font-feature-settings: "liga=0";
+  -moz-font-feature-settings: "liga=0";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

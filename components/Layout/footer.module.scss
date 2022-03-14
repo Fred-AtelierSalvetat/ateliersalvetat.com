@@ -1,0 +1,55 @@
+@use "../../sass/params" as *;
+@use "../../sass/mixins" as *;
+
+.footer {
+  padding: 1rem $pageHorizontalPadding;
+  background: $primary;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  @include large() {
+    flex-direction: row;
+  }
+
+  .topInnerBox {
+    width: 100%;
+    @include large() {
+      flex: 1 1 66%;
+    }
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    .linksbox {
+      //flex: 1 1 100%;
+      margin-block: 3vw;
+      display: flex;
+      justify-content: center;
+      gap: 5vw;
+      svg {
+        fill: $white;
+        width: 5vw;
+        height: 5vw;
+      }
+    }
+  }
+
+  .bottomInnerBox {
+    align-self: flex-end;
+    margin: 0;
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+    flex-direction: row;
+    justify-content: space-between;
+    @include large() {
+      flex-direction: column;
+      flex: 1 1 33%;
+    }
+    a {
+      text-align: right;
+      color: $white;
+    }
+  }
+}

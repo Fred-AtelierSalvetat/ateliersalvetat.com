@@ -1,0 +1,60 @@
+@import "../../sass/params";
+
+.portfolio {
+  margin-top: $pageVerticalPadding;
+  > p {
+    text-align: center;
+  }
+
+  .title {
+    color: $primary;
+    font-size: 3rem;
+    text-align: center;
+    //margin-bottom: $pageVerticalPadding;
+  }
+  .portfolioIntro {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    & > * {
+      margin: 0;
+      white-space: pre;
+    }
+  }
+  .rewrapswiper {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+
+    .nav__next,
+    .nav__prev {
+      --swiper-navigation-color: #{$primary};
+      position: relative;
+      @media (min-width: 40rem) {
+        display: none;
+      }
+    }
+    .swiper {
+      padding-block: 2em; //Padding necessary to avoid 3D coverflow effect overlap hidden
+
+      :global(.swiper-pagination) {
+        margin-top: 3em;
+        position: relative;
+      }
+      :global(.swiper-pagination-bullet) {
+        width: 1rem;
+        height: 1rem;
+        margin-inline: 1rem;
+        border: 3px solid $primary;
+        border-radius: 50%;
+        background-color: transparent;
+        opacity: 0.7;
+      }
+      :global(.swiper-pagination-bullet-active) {
+        background-color: $primary;
+        opacity: 1;
+      }
+    }
+  }
+}

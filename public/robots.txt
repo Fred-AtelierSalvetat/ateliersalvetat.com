@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.ateliersalvetat.com
+
+# Sitemaps
+Sitemap: https://www.ateliersalvetat.com/sitemap.xml

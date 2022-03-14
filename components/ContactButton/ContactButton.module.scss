@@ -1,0 +1,31 @@
+@import "../../sass/params";
+
+.myFab {
+  .fabHide {
+    visibility: hidden;
+  }
+  .fabShow {
+    visibility: show;
+  }
+  :global(ul.rtf) {
+    svg {
+      fill: $primary;
+      &:hover {
+        fill: $white;
+      }
+      width: 3rem;
+      height: 3rem;
+      padding: 0.5rem;
+    }
+    button {
+      border: 0.3rem solid $primary;
+      background-color: $white;
+      color: $primary;
+      transition: background-color 0.3s, color 0.3s;
+      &:hover {
+        background-color: $primary;
+        color: $white;
+      }
+    }
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "name": "monsite",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@aws-amplify/datastore": "^3.7.8",
+    "@react-hook/window-size": "^3.0.7",
+    "@testing-library/jest-dom": "^5.16.2",
+    "@testing-library/react": "^12.1.4",
+    "@testing-library/user-event": "^13.5.0",
+    "aws-amplify": "^4.3.16",
+    "classnames": "^2.3.1",
+    "next": "^12.1.0",
+    "normalize.css": "^8.0.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "sharp": "^0.30.2",
+    "swiper": "^8.0.7",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "postbuild": "next-sitemap",
+    "start": "next start",
+    "lint": "next lint",
+    "sass": "sass -watch components -o css"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@next/eslint-plugin-next": "^12.1.0",
+    "@svgr/webpack": "^6.2.1",
+    "eslint": "^8.11.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-next": "12.1.0",
+    "eslint-config-react-app": "^7.0.0",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-react": "^7.29.4",
+    "eslint-plugin-react-hooks": "^4.3.0",
+    "next-sitemap": "^2.5.7",
+    "sass": "^1.49.9"
+  }
+}

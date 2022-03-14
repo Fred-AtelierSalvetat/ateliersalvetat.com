@@ -1,0 +1,28 @@
+/*
+Font: 		Glory Culture
+Style: 		Alt Regular
+URL: 		https://www.youworkforthem.com/font/T12610/glory-culture-svg-font
+Foundry: 	Set Sail Studios
+Foundry: 	https://www.youworkforthem.com/designer/527/set-sail-studios
+Copyright:	Copyright (c) 2020 by Set Sail Studios Ltd. All rights reserved.
+Version: 	17
+Created:	July 21, 2020
+License: 	https://www.youworkforthem.com/font-license 
+License: 	The WebFont(s) listed in this document must follow the YouWorkForThem
+			WebFont license rules. All other parties are strictly restricted 
+			from using the WebFonts(s) listed without a purchased license. 
+			All details above must always remain unaltered and visible in your CSS.
+*/
+
+@font-face {
+  font-family: "GloryCulture-AltRegular";
+  src: url("glory-culture-alt-regular.eot");
+  src: url("glory-culture-alt-regular.eot?#iefix") format("embedded-opentype"),
+    url("glory-culture-alt-regular.woff2") formavt("woff2"),
+    url("glory-culture-alt-regular.woff") format("woff"),
+    url("glory-culture-alt-regular.ttf") format("truetype"),
+    url("glory-culture-alt-regular.svg#youworkforthem") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
