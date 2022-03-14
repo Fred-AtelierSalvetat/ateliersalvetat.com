@@ -1,10 +1,11 @@
 import React from "react";
 
 import styles from "./legalpage.module.scss";
+import classNames from "classnames";
 
 const LegalPage = () => {
   return (
-    <main className={styles.legalpage}>
+    <main className={classNames(styles.legalpage, "margin1rem")}>
       <div className={styles.titleblock}>
         <h1>
           Mentions légales
