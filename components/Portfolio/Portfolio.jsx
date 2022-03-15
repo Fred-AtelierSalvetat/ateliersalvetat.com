@@ -125,7 +125,11 @@ const Portfolio = () => {
             ))}
           </div>
           <div
-            className={classNames("swiper-pagination", styles.pagination)}
+            className={classNames(
+              "swiper-pagination",
+              "margin3rem",
+              styles.pagination
+            )}
           ></div>
         </div>
         <div

@@ -4,24 +4,6 @@
   .intro {
     text-align: center;
     background-color: $white;
-
-    figure {
-      display: none;
-      @include large() {
-        display: block;
-      }
-      margin-top: 5vw;
-      .portrait {
-        margin: 0 auto;
-        max-width: 22rem;
-        @media (min-width: 48rem) {
-          max-width: 36rem;
-        }
-        border-radius: $borderRadius;
-        overflow: hidden;
-        border: 0.25rem solid $primary;
-      }
-    }
   }
   .pictureContainer {
     margin-top: 5vw;
@@ -35,10 +17,31 @@
   .pitch {
     color: $white;
     background-color: $primary;
-    h2,
-    a,
-    p {
-      color: white;
+    .pitch__container {
+      display: flex;
+      justify-content: center;
+
+      h2,
+      a,
+      p {
+        color: white;
+      }
+      figure {
+        display: none;
+        @include large() {
+          display: block;
+        }
+        .portrait {
+          margin: 0 auto;
+          max-width: 22rem;
+          @media (min-width: 48rem) {
+            max-width: 36rem;
+          }
+          border-radius: $borderRadius;
+          overflow: hidden;
+          border: 0.25rem solid $white;
+        }
+      }
     }
   }
 }

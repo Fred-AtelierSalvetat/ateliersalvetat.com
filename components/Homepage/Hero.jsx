@@ -18,43 +18,45 @@ const Hero = () => {
             "Je développe des solutions simples et efficaces pour mes clients et j'adore ce que je fais."
           }
         </p>
-        <figure>
-          <div className={styles.portrait}>
-            <Image
-              alt="Frédéric Salvetat"
-              src={meMyself}
-              priority
-              placeholder="blur"
-              layout="responsive"
-              sizes={["22rem", "(min-width: 48rem) 36rem"]}
-            />
-          </div>
-          <figcaption>
-            {"Les petits plaisirs du développement en hiver"}
-          </figcaption>
-        </figure>
 
         <div className={styles.pictureContainer}>
           <CodingSvg className={styles.coding} />
         </div>
       </div>
       <div className={classNames(styles.pitch, "padding1rem")}>
-        <div className="container padding2rem">
-          <h2>{"Qui suis-je?"}</h2>
-          <p>{"Je m'appelle Frédéric. Je suis ingénieur et développeur."}</p>
-          <p>
-            {
-              "J'ai exercé durant plus de vings ans au sein de grands groupes industriels et bancaires. Je vous propose à présent mes compétences en tant que freelance."
-            }
-          </p>
-          <p>
-            {"J’adhère aux principes du "}
-            <a href="http://manifesto.softwarecraftsmanship.org/#/fr-fr">
-              {"Manifeste du Software Craftsmanship"}
-            </a>
-            .<br />
-            J'aime le travail bien fait.
-          </p>
+        <div className={classNames(styles.pitch__container, "padding2rem")}>
+          <div>
+            <h2>{"Qui suis-je?"}</h2>
+            <p>{"Je m'appelle Frédéric. Je suis ingénieur et développeur."}</p>
+            <p>
+              {
+                "J'ai exercé durant plus de vings ans au sein de grands groupes industriels et bancaires. Je vous propose à présent mes compétences en tant que freelance."
+              }
+            </p>
+            <p>
+              {"J’adhère aux principes du "}
+              <a href="http://manifesto.softwarecraftsmanship.org/#/fr-fr">
+                {"Manifeste du Software Craftsmanship"}
+              </a>
+              .<br />
+              J'aime le travail bien fait.
+            </p>
+          </div>
+          <figure>
+            <div className={styles.portrait}>
+              <Image
+                alt="Frédéric Salvetat"
+                src={meMyself}
+                priority
+                placeholder="blur"
+                layout="responsive"
+                sizes={["22rem", "(min-width: 48rem) 36rem"]}
+              />
+            </div>
+            <figcaption>
+              {"Les petits plaisirs du développement en hiver"}
+            </figcaption>
+          </figure>
         </div>
       </div>
     </section>

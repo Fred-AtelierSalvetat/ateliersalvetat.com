@@ -36,6 +36,7 @@ $typoSize: (
     // Fallback
     font-size: calc(#{$size} * 0.75);
     margin: string.unquote($margin);
+    max-width: 70ch;
   }
 }
 h1,
