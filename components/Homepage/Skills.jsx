@@ -11,7 +11,10 @@ const Skills = () => {
       <div className={styles.skillframe}>
         <div className={styles.skillbox}>
           <Frontend />
-          <h2>Développement Front-End</h2>
+          <h2>
+            <span>{"Développement"}</span>
+            <span style={{ whiteSpace: "nowrap" }}> Front-end</span>
+          </h2>
           <p className={styles.box__text}>
             {"J'aime coder et donner vie aux idées."}
           </p>

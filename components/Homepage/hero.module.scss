@@ -1,14 +1,16 @@
 @use "../../sass/params" as *;
-
+@use "../../sass/mixins" as *;
 .hero {
   .intro {
     text-align: center;
     background-color: $white;
-    h1 {
-      color: $secondary;
-    }
+
     figure {
-      margin: 3.75rem 0;
+      display: none;
+      @include large() {
+        display: block;
+      }
+      margin-top: 5vw;
       .portrait {
         margin: 0 auto;
         max-width: 22rem;
@@ -22,6 +24,7 @@
     }
   }
   .pictureContainer {
+    margin-top: 5vw;
     vertical-align: bottom;
     svg.coding {
       width: 20rem;

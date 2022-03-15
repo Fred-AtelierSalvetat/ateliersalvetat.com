@@ -49,6 +49,7 @@ const cards = [
         </p>
       </>
     ),
+    page: "/lcdd",
   },
   {
     github: true,
@@ -60,6 +61,7 @@ const cards = [
         Un framework full-stack simple et efficace, je recommande sans réserver.
       </p>
     ),
+    page: "/lcdd",
   },
 ];
 
