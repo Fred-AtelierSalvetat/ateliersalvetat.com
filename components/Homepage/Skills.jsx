@@ -7,17 +7,15 @@ import psmBadge from "/public/pictures/psm.png";
 
 const Skills = () => {
   return (
-    <section className={styles.skills}>
+    <section className={`${styles.skills} padding1rem`}>
       <div className={styles.skillframe}>
-        <div className={styles.skillbox}>
+        <div className={`${styles.skillbox} padding1rem`}>
           <Frontend />
           <h2>
             <span>{"Développement"}</span>
             <span style={{ whiteSpace: "nowrap" }}> Front-end</span>
           </h2>
-          <p className={styles.box__text}>
-            {"J'aime coder et donner vie aux idées."}
-          </p>
+
           <h3>Ma stack</h3>
           <ul>
             <li>HTML</li>
@@ -49,14 +47,9 @@ const Skills = () => {
           </ul>
         </div>
 
-        <div className={styles.skillbox}>
+        <div className={`${styles.skillbox} padding1rem`}>
           <AdditionalSkills />
           <h2>Side skills</h2>
-          <p className={styles.box__text}>
-            {
-              "J'ai une experience variée avec différents rôles exercés dans équipes internationales."
-            }
-          </p>
           <h3>Anglais courant</h3>
           <h3>Back-End</h3>
           <ul>
@@ -78,8 +71,7 @@ const Skills = () => {
                 <Image
                   src={psmBadge}
                   alt="PSM 1 certification"
-                  width={32}
-                  height={32}
+                  layout="responsive"
                 />
               </a>
             </li>

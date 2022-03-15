@@ -20,7 +20,7 @@ const Brand = ({ whiteColorName = false }) => {
             Atelier Salvetat
           </p>
           <p className={classNames(style.sub, "brand-sub")}>
-            Confection logicielle
+            Développement logiciel
           </p>
         </a>
       </div>
