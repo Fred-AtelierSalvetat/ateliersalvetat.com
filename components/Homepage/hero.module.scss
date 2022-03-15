@@ -27,10 +27,7 @@
     margin-top: 5vw;
     vertical-align: bottom;
     svg.coding {
-      width: 20rem;
-      @media (min-width: 768px) {
-        width: 30rem;
-      }
+      width: min(45vw, 35rem);
       vertical-align: bottom;
       fill: $primary;
     }

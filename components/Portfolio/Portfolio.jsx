@@ -124,9 +124,13 @@ const Portfolio = () => {
               </div>
             ))}
           </div>
-          <div className="swiper-pagination"></div>
+          <div
+            className={classNames("swiper-pagination", styles.pagination)}
+          ></div>
         </div>
-        <div className={`swiper-button-next ${styles.nav__next}`}></div>
+        <div
+          className={classNames("swiper-button-next", styles.nav__next)}
+        ></div>
       </div>
     </section>
   );
