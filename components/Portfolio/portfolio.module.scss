@@ -15,12 +15,14 @@
   }
   .portfolioIntro {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
-    align-content: center;
     & > * {
-      margin: 0;
       white-space: pre;
+      text-align: center;
+    }
+    @include medium() {
+      flex-direction: row;
     }
   }
   .rewrapswiper {
@@ -31,6 +33,7 @@
     .nav__next,
     .nav__prev {
       --swiper-navigation-color: #{$primary};
+      --swiper-navigation-size: 5vw;
       position: relative;
       @include medium() {
         display: none;
@@ -44,9 +47,9 @@
         position: relative;
       }
       :global(.swiper-pagination-bullet) {
-        width: 1rem;
-        height: 1rem;
-        margin-inline: 1rem;
+        width: 2vw;
+        height: 2vw;
+        margin-inline: 3vw;
         border: 3px solid $primary;
         border-radius: 50%;
         background-color: transparent;

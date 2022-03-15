@@ -110,9 +110,9 @@ const Portfolio = () => {
   return (
     <section className={classNames(styles.portfolio, "padding1rem")}>
       <h2 className={styles.title}>Portfolio</h2>
-      <div className={styles.portfolioIntro}>
-        <p> Quelques une de mes réalisations.</p>
-        <p> {"Live démo & sources included"}</p>
+      <div className={`${styles.portfolioIntro} margin1rem`}>
+        <p className="nomargin"> Quelques une de mes réalisations.</p>
+        <p className="nomargin"> {"Live démo & sources included"}</p>
       </div>
       <div className={styles.rewrapswiper}>
         <div className={`swiper-button-prev ${styles.nav__prev}`}></div>
