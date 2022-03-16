@@ -1,0 +1,23 @@
+@use "../../sass/params" as *;
+@use "../../sass/mixins" as *;
+
+.main {
+  margin-top: 5vw;
+  display: flex;
+  flex-direction: column;
+  @include medium() {
+    flex-direction: row;
+  }
+  & > * {
+    flex: 1 1 100%;
+  }
+  gap: min(5vw, 90px);
+
+  .pitch {
+    svg {
+      fill: $secondary;
+      width: min(5vw, 90px);
+      height: min(5vw, 90px);
+    }
+  }
+}

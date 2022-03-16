@@ -39,9 +39,9 @@ const PortFolioCard = ({
   // ];
 
   return (
-    <Link href={page}>
+    <Link href={`/portfolio/${page}`}>
       <div className={styles.card}>
-        <div onClick={() => console.log("Click")} className={styles.thumbnail}>
+        <div className={styles.thumbnail}>
           <Image
             priority
             alt={title}

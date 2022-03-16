@@ -11,7 +11,7 @@ import "swiper/css/pagination";
 
 import classNames from "classnames";
 
-import cards from "./projects_data";
+import { cardList } from "./projects_data";
 
 const Portfolio = () => {
   useEffect(() => {
@@ -66,7 +66,7 @@ const Portfolio = () => {
         <div className={`swiper-button-prev ${styles.nav__prev}`}></div>
         <div className={`swiper ${styles.swiper}`}>
           <div className="swiper-wrapper">
-            {cards?.map((card) => (
+            {cardList?.map((card) => (
               <div key={card.title} className="swiper-slide">
                 <PortFolioCard {...card} />
               </div>

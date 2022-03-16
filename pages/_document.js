@@ -7,7 +7,7 @@ class MyDocument extends Document {
         <Head>
           <link
             rel="stylesheet"
-            href="fonts/subset/glory-culture-alt-regular.css"
+            href="/fonts/subset/glory-culture-alt-regular.css"
             crossOrigin=""
           />
           <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -17,7 +17,7 @@ class MyDocument extends Document {
             href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&family=Roboto+Slab&display=swap"
             rel="stylesheet"
           />
-          <script src="scripts/typetura.min.js"></script>
+          <script src="/scripts/typetura.min.js"></script>
         </Head>
         <body>
           <Main />
