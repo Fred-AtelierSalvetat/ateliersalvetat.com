@@ -31,7 +31,7 @@ $typoSize: (
   #{$selector} {
     @extend #{$font};
     --tt-key: #{$keyframe};
-    //--tt-ease: linear;
+    --tt-ease: cubic-bezier(0.22, 0.83, 0.87, 0.48);
     line-height: $lineheight;
     // Fallback
     font-size: calc(#{$size} * 0.75);

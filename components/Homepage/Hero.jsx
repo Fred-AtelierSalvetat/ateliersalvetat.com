@@ -13,11 +13,12 @@ const Hero = () => {
           <span>{"Développeur "}</span>
           <span style={{ whiteSpace: "nowrap" }}>Front-End</span>
         </h1>
-        <p>
-          {
-            "Je développe des solutions simples et efficaces pour mes clients et j'adore ce que je fais."
-          }
-        </p>
+        <div className={`${styles.intro__text} margin1rem`}>
+          <p className="nomargin">
+            {"Des solutions simples, efficaces, maintenables et évolutives. "}
+          </p>
+          <p className="nomargin">Dans le respect des règles de l'art.</p>
+        </div>
 
         <div className={styles.pictureContainer}>
           <CodingSvg className={styles.coding} />
@@ -47,7 +48,6 @@ const Hero = () => {
               <Image
                 alt="Frédéric Salvetat"
                 src={meMyself}
-                priority
                 placeholder="blur"
                 layout="responsive"
                 sizes={["22rem", "(min-width: 48rem) 36rem"]}

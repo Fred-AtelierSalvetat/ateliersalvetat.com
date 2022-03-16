@@ -4,7 +4,21 @@
   .intro {
     text-align: center;
     background-color: $white;
+    .intro__text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      & > * {
+        white-space: pre;
+        text-align: center;
+      }
+      @include medium() {
+        flex-direction: row;
+      }
+    }
   }
+
   .pictureContainer {
     margin-top: 5vw;
     vertical-align: bottom;
