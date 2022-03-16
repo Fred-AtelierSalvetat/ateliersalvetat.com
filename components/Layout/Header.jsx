@@ -5,7 +5,7 @@ import classNames from "classnames";
 
 const Header = () => {
   return (
-    <header className={classNames(styles.header, "margin1rem")}>
+    <header className={classNames(styles.header, "pagePadding")}>
       <Brand />
     </header>
   );

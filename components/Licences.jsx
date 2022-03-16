@@ -8,8 +8,8 @@ import classNames from "classnames";
 
 const Licences = () => {
   return (
-    <div className="margin1rem">
-      <main className={styles.licences}>
+    <div className="pagePadding">
+      <main className={`${styles.licences} container`}>
         <h1>Citation des assets sous licences libres utilisées</h1>
         <ul>
           <li>

@@ -7,13 +7,13 @@ import psmBadge from "/public/pictures/psm.png";
 
 const Skills = () => {
   return (
-    <section className={`${styles.skills} padding1rem`}>
+    <section className={`${styles.skills} pagePadding`}>
       <div className={styles.skillframe}>
-        <div className={`${styles.skillbox} padding1rem`}>
+        <div className={`${styles.skillbox} padding2rem`}>
           <Frontend />
           <h2>
-            <span>{"Développement"}</span>
-            <span style={{ whiteSpace: "nowrap" }}> Front-end</span>
+            <div>{"Développement"}</div>
+            <div style={{ whiteSpace: "nowrap" }}> Front-end</div>
           </h2>
 
           <h3>Ma stack</h3>
@@ -47,7 +47,7 @@ const Skills = () => {
           </ul>
         </div>
 
-        <div className={`${styles.skillbox} padding1rem`}>
+        <div className={`${styles.skillbox} padding2rem`}>
           <AdditionalSkills />
           <h2>Side skills</h2>
           <h3>Anglais courant</h3>

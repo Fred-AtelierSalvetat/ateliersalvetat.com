@@ -9,7 +9,6 @@
 
   .title {
     color: $primary;
-    font-size: 3rem;
     text-align: center;
     //margin-bottom: $pageVerticalPadding;
   }
@@ -29,7 +28,7 @@
   .rewrapswiper {
     display: flex;
     align-items: center;
-    gap: 2rem;
+    gap: min(5vw, 2rem);
 
     .nav__next,
     .nav__prev {
@@ -47,9 +46,9 @@
         position: relative;
       }
       :global(.swiper-pagination-bullet) {
-        width: 2vw;
-        height: 2vw;
-        margin-inline: 3vw;
+        width: min(2vw, 2rem);
+        height: min(2vw, 2rem);
+        margin-inline: min(3vw, 3rem);
         border: 3px solid $primary;
         border-radius: 50%;
         background-color: transparent;

@@ -56,7 +56,7 @@ const Portfolio = () => {
   }, []);
 
   return (
-    <section className={classNames(styles.portfolio, "padding1rem")}>
+    <section className={classNames(styles.portfolio, "pagePadding")}>
       <h2 className={styles.title}>Portfolio</h2>
       <div className={`${styles.portfolioIntro} margin1rem`}>
         <p className="nomargin"> Quelques une de mes réalisations.</p>

@@ -6,7 +6,7 @@ import Link from "next/link";
 const Brand = ({ whiteColorName = false }) => {
   return (
     <Link href="/">
-      <div className="margin1rem">
+      <div className="margin2rem">
         <a className={style.brand}>
           <p
             className={classNames(

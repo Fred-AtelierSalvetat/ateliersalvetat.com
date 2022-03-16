@@ -11,7 +11,7 @@ import styles from "./footer.module.scss";
 
 const Footer = () => {
   return (
-    <div className={classNames(styles.footer, "padding1rem")}>
+    <div className={classNames(styles.footer, "pagePadding")}>
       <div className={styles.brand}>
         <Brand whiteColorName />
       </div>

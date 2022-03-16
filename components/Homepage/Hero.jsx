@@ -8,7 +8,7 @@ import classNames from "classnames";
 const Hero = () => {
   return (
     <section className={styles.hero}>
-      <div className={classNames(styles.intro, "margin1rem")}>
+      <div className={classNames(styles.intro, "pagePadding")}>
         <h1>
           <span>{"Développeur "}</span>
           <span style={{ whiteSpace: "nowrap" }}>Front-End</span>
@@ -24,9 +24,9 @@ const Hero = () => {
           <CodingSvg className={styles.coding} />
         </div>
       </div>
-      <div className={classNames(styles.pitch, "padding1rem")}>
-        <div className={classNames(styles.pitch__container, "padding2rem")}>
-          <div>
+      <div className={classNames(styles.pitch, "pagePadding")}>
+        <div className={classNames(styles.pitch__container)}>
+          <div className={styles.accroche}>
             <h2>{"Qui suis-je?"}</h2>
             <p>{"Je m'appelle Frédéric. Je suis ingénieur et développeur."}</p>
             <p>
