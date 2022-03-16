@@ -1,9 +1,9 @@
 //import ContactButton from "../components/ContactButton/ContactButton";
 
-import Portfolio from "../components/Portfolio/Portfolio";
+import Portfolio from "../../components/Portfolio/Portfolio";
 
 import Head from "next/head";
-import Layout from "../components/Layout/Layout";
+import Layout from "../../components/Layout/Layout";
 
 export default function App() {
   return (
