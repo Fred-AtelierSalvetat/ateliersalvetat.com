@@ -19,6 +19,7 @@ const PortfolioProjectPitch = ({
       </div>
       <main className={styles.main}>
         <Image
+          className={styles.picture}
           priority
           alt={title}
           src={introduction__picture}
@@ -34,6 +35,7 @@ const PortfolioProjectPitch = ({
           </p>
           <a target="_self" href={github__url}>
             <GitHubIcon />
+            <p>{github__url}</p>
           </a>
         </div>
       </main>

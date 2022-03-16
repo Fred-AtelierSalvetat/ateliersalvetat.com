@@ -13,11 +13,19 @@
   }
   gap: min(5vw, 90px);
 
+  .picture {
+    box-shadow: 0.5rem 0.5rem 0.5rem 1rem $primary;
+  }
   .pitch {
-    svg {
-      fill: $secondary;
-      width: min(5vw, 90px);
-      height: min(5vw, 90px);
+    a {
+      display: flex;
+      align-items: center;
+
+      svg {
+        fill: $secondary;
+        width: min(5vw, 90px);
+        height: min(5vw, 90px);
+      }
     }
   }
 }

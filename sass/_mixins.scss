@@ -1,5 +1,10 @@
 @use "params" as *;
 
+@mixin small() {
+  @media (min-width: $breakpoint_S_minWidth) {
+    @content;
+  }
+}
 @mixin medium() {
   @media (min-width: $breakpoint_M_minWidth) {
     @content;

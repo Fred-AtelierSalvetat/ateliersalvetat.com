@@ -18,12 +18,14 @@
     }
   }
   .linksbox {
-    flex: 1 1 40%;
+    flex: 1 1 100%;
+    @include small() {
+      flex: unset;
+    }
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     @include large() {
       flex: 1 1 30%;
-      justify-content: center;
     }
     gap: min(5vw, 90px);
     svg {
