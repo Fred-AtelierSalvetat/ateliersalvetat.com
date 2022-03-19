@@ -18,13 +18,14 @@ const PortfolioProjectPitch = ({
         <h1>{title}</h1>
       </div>
       <main className={styles.main}>
-        <Image
-          className={styles.picture}
-          priority
-          alt={title}
-          src={introduction__picture}
-          sizes={["20rem", "(min-width: 48rem) 40rem"]}
-        />
+        <div className={styles.picture}>
+          <Image
+            priority
+            alt={title}
+            src={introduction__picture}
+            sizes={["20rem", "(min-width: 48rem) 40rem"]}
+          />
+        </div>
         <div className={styles.pitch}>
           <h2>{introducion__title}</h2>
           {/* <p>{introduction__text}</p> */}
