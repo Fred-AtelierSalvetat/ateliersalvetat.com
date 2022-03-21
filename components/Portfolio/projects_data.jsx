@@ -6,6 +6,7 @@ export const cardList = [
   {
     src: lcddHome,
     github: false,
+    live: true,
     title: "La chaîne du droit",
     keywords: ["React", "Typescript", "API REST", "reac-hook-form", "SASS"],
     desc: (
@@ -21,6 +22,7 @@ export const cardList = [
   },
   {
     github: true,
+    live: true,
     src: openAPI,
     title: "Une spec et un stub, Django + DRF magique!",
     keywords: ["Django", "Python", "API REST", "Swagger"],
@@ -40,6 +42,7 @@ export const cardList = [
   },
   {
     github: true,
+    live: true,
     src: nextLogo,
     title: "React c'est bien tellement mieux avec Next.js",
     keywords: ["SSR", "Next.js", "React", "API REST"],

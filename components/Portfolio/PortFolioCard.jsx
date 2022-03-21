@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 import GithubCorner from "/public/icons/github-corner-right.svg";
-
+import Live from "./Live";
 import styles from "./portfoliocard.module.scss";
 
 const PortFolioCard = ({
@@ -12,6 +12,7 @@ const PortFolioCard = ({
   desc,
   keywords,
   github = false,
+  live = false,
   page,
 }) => {
   //{ alt, src, title, tags, githublink }
@@ -51,6 +52,11 @@ const PortFolioCard = ({
           {github && (
             <div className={styles.githubcornericon}>
               <GithubCorner />
+            </div>
+          )}
+          {live && (
+            <div className={styles.liveicon}>
+              <Live />
             </div>
           )}
         </div>
