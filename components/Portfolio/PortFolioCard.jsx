@@ -63,7 +63,7 @@ const PortFolioCard = ({
         <div className={styles.content}>
           <div className={styles.keywordscontainer}>
             {keywords?.slice(0, 3).map((keyword) => (
-              <p key={keyword} className={styles.keyword}>
+              <p key={keyword} className={`${styles.keyword} nomargin`}>
                 {keyword}
               </p>
             ))}
