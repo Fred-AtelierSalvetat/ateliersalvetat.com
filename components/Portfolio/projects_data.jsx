@@ -78,6 +78,7 @@ export const cards = {
     introduction__text:
       "Une fois n'est pas coutume, la team backend m'a demandé de spécifier ce que j'attendai du backend.\n\nCe projet est la réponse : un backend tout simple qui produit une spécification au format openAPI et a vocation a être utilisé comme un stub.",
     github__url: "https://github.com/Fred-AtelierSalvetat/lcddbackend-django",
+    live_url: "http://ateliersalvetat.pythonanywhere.com/swagger/",
   },
   "next.js": {
     meta__title: "Atelier Salvetat, portfolio - Next.js",
