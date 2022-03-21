@@ -5,6 +5,6 @@
 [![typetura](https://img.shields.io/badge/typeset%20with-typetura-129681.svg)](https://typetura.com/)
 [![Libraries.io dependency status for GitHub repo](https://img.shields.io/librariesio/github/Fred-AtelierSalvetat/ateliersalvetat.com)](https://libraries.io/github/Fred-AtelierSalvetat/ateliersalvetat.com)
 
-![Portfolio-Lccbackend](https://img.shields.io/website?url=http%3A%2F%2Fateliersalvetat.pythonanywhere.com%2F)
+![Website](https://img.shields.io/website?label=Portfolio-lccbackend&url=http%3A%2F%2Fateliersalvetat.pythonanywhere.com%2F)
 
 Skills and portfolio presentation
