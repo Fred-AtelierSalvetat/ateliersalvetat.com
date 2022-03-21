@@ -65,18 +65,18 @@ export const cards = {
     meta__content: "Un backend Django/DRF tout simple pour prototyper une API",
     title: "Un backend Django/DRF tout simple pour prototyper une API",
     introduction__picture: openAPI,
-    introduciton__keywords: [
+    introduction__keywords: [
       "Backend",
       "Python",
       "Django",
       "Django REST Framework",
       "API REST",
-      "drf-yasg - Yet another Swagger generator",
+      "drf-yasg",
       "openAPI",
     ],
     introducion__title: "Une spec et un stub, efficace non?",
     introduction__text:
-      "Une fois n'est pas coutume, la team backend m'a demandé de spécifier ce que j'attendai du backend./n Ce projet est la réponse : un backend tout simple qui produit une spécification au format openAPI et a vocation a être utilisé comme un stub.",
+      "Une fois n'est pas coutume, la team backend m'a demandé de spécifier ce que j'attendai du backend.\n\nCe projet est la réponse : un backend tout simple qui produit une spécification au format openAPI et a vocation a être utilisé comme un stub.",
     github__url: "https://github.com/Fred-AtelierSalvetat/lcddbackend-django",
   },
   "next.js": {

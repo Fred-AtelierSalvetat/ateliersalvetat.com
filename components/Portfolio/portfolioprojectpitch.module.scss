@@ -12,6 +12,22 @@
 
   gap: min(5vw, 90px);
 
+  .keywordscontainer {
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.25em;
+    align-items: flex-start;
+    .keyword {
+      margin: 0;
+      //        font-size: 0.8rem;
+      font-weight: bold;
+      padding: 0.5em 1em;
+      border-radius: 20em;
+      color: $white;
+      background: $secondary;
+    }
+  }
   .picture {
     width: 80%;
     height: fit-content;
@@ -19,7 +35,7 @@
     @include medium() {
       margin: 0;
     }
-    box-shadow: 0 0 16px 2px fade-out($primary, 0.4);
+    box-shadow: 0 0 16px 2px fade-out($secondary, 0.4);
   }
   .pitch {
     flex: 1 1 60%;
@@ -28,9 +44,11 @@
       align-items: center;
 
       svg {
-        fill: $secondary;
+        display: inline-block;
         width: min(3vw, 90px);
         height: min(3vw, 90px);
+        margin-inline: min(3vw, 90px);
+        fill: $secondary;
       }
     }
   }

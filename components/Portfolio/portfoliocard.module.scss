@@ -22,7 +22,6 @@
   .githubcornericon {
     min-width: 3rem;
     width: clamp(3rem, 20%, 5rem);
-
     position: absolute;
     top: 0;
     right: 0;
@@ -48,9 +47,8 @@
       align-items: flex-start;
       .keyword {
         margin: 0;
-        //        font-size: 0.8rem;
         font-weight: bold;
-        padding: 0.5em 1em;
+        padding: 0.25em 0.5m;
         border-radius: 20em;
         color: $white;
         background: $secondary;

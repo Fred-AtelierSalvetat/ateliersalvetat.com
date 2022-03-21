@@ -30,6 +30,22 @@ $sizes: (
     margin: calc(#{$size} * 0.75);
   }
 
+  //Margins block
+  $keyframe: string.unique-id();
+  @keyframes #{$keyframe} {
+    0% {
+      margin: 0;
+    }
+    100% {
+      margin: #{$size} 0;
+    }
+  }
+  .marginblock#{$size} {
+    --tt-key: #{$keyframe};
+    //Fallback
+    margin: calc(#{$size} * 0.75) 0;
+  }
+
   //Paddings
   $keyframe: string.unique-id();
   @keyframes #{$keyframe} {

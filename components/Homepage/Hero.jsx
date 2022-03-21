@@ -9,7 +9,7 @@ const Hero = () => {
   return (
     <section className={styles.hero}>
       <div className={classNames(styles.intro, "pagePadding")}>
-        <h1>
+        <h1 className="nomarginTop">
           <span>{"Développeur "}</span>
           <span style={{ whiteSpace: "nowrap" }}>Front-End</span>
         </h1>
