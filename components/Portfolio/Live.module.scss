@@ -1,0 +1,11 @@
+@use "../../sass/params" as *;
+@use "../../sass/fonts" as *;
+
+.liveMarker {
+  @extend .accent-font;
+  letter-spacing: 0.125em;
+  color: $white;
+  background: $primary;
+  padding: 0.125em 0.25em;
+  border-radius: 2px;
+}

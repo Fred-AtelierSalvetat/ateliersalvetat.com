@@ -39,15 +39,24 @@
   }
   .pitch {
     flex: 1 1 60%;
+    .links {
+      display: grid;
+      grid-template-columns: max-content auto;
+      column-gap: min(3vw, 90px);
+      //justify-items: center;
+    }
     a {
       display: flex;
       align-items: center;
-
+      text-decoration: none;
+      .txtLink {
+        text-decoration: underline;
+        justify-self: flex-start;
+      }
       svg {
+        margin: 0 auto;
         display: inline-block;
         width: min(3vw, 90px);
-        height: min(3vw, 90px);
-        margin-inline: min(3vw, 90px);
         fill: $secondary;
       }
     }

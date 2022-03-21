@@ -1,4 +1,5 @@
 import GitHubIcon from "../../public/icons/github.svg";
+import Live from "./Live";
 
 import Image from "next/image";
 
@@ -11,6 +12,7 @@ const PortfolioProjectPitch = ({
   introducion__title,
   introduction__text,
   github__url,
+  live_url,
 }) => {
   return (
     <div className="pagePadding">
@@ -41,10 +43,20 @@ const PortfolioProjectPitch = ({
               "Une fois n'est pas coutume, la team backend m'a demandé de spécifier ce que j'attendai du backend.\n\nCe projet est la réponse : un backend tout simple qui produit une spécification au format openAPI et a vocation a être utilisé comme un stub."
             } */}
           </p>
-          <a target="_self" href={github__url}>
-            <GitHubIcon />
-            <p>{github__url}</p>
-          </a>
+          <div className={styles.links}>
+            <a className={styles.githubLink} target="_self" href={github__url}>
+              <GitHubIcon />
+            </a>
+            <a className={styles.githubLink} target="_self" href={github__url}>
+              <p className={styles.txtLink}>{github__url}</p>
+            </a>
+            <a target="_self" href={live_url}>
+              <Live />
+            </a>
+            <a target="_self" href={live_url}>
+              <p className={styles.txtLink}>{live_url}</p>
+            </a>
+          </div>
         </div>
       </main>
     </div>
