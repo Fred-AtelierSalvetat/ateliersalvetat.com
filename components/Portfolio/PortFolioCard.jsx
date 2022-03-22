@@ -67,7 +67,7 @@ const PortFolioCard = ({
                 {keyword}
               </p>
             ))}
-            {keywords?.length > 3 && <p className={styles.ellipsis}>...</p>}
+            {keywords?.length > 3 && <p className={`${styles.ellipsis} nomargin`}>...</p>}
           </div>
           <h3 className={styles.title}>{title}</h3>
           <div className={styles.description}>{desc}</div>

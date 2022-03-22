@@ -5,8 +5,7 @@ import nextLogo from "/public/pictures/Next/Nextjs-logo.png";
 export const cardList = [
   {
     src: lcddHome,
-    github: false,
-    live: true,
+    github: true,
     title: "La chaîne du droit",
     keywords: ["React", "Typescript", "API REST", "reac-hook-form", "SASS"],
     desc: (
@@ -60,28 +59,38 @@ export const cards = {
   "lcdd-frontend": {
     meta__title: "Atelier Salvetat, portfolio - La chaîne du droit - Front-end",
     meta__content:
-      "Un projet React/redux complexe, des formunaires et des API REST",
+      "Un projet React/redux assez complexe, des formunaires et des API REST",
     title: "La chaîne du droit, un frontend ",
+
+    // Intégration de maquettes Figma
+    // Création de formulaires complexes
+    // Implémentation de Redux
+    // Connections API REST
+    // Tests unitaires/integ
   },
   "lcdd-backend": {
     meta__title: "Atelier Salvetat, portfolio - La chaîne du droit - Back-end",
     meta__content: "Un backend Django/DRF tout simple pour prototyper une API",
     title: "Un backend Django/DRF tout simple pour prototyper une API",
-    introduction__picture: openAPI,
-    introduction__keywords: [
-      "Backend",
-      "Python",
-      "Django",
-      "Django REST Framework",
-      "API REST",
-      "drf-yasg",
-      "openAPI",
+    sections: [
+      {
+        picture: openAPI,
+        keywords: [
+          "Backend",
+          "Python",
+          "Django",
+          "Django REST Framework",
+          "API REST",
+          "drf-yasg",
+          "openAPI",
+        ],
+        title: "Une spec et un stub, efficace non?",
+        text: "Une fois n'est pas coutume, la team backend m'a demandé de spécifier ce que j'attendai du backend.\n\nCe projet est la réponse : un backend tout simple qui produit une spécification au format openAPI et a vocation a être utilisé comme un stub.",
+        github__url:
+          "https://github.com/Fred-AtelierSalvetat/lcddbackend-django",
+        live_url: "http://ateliersalvetat.pythonanywhere.com/swagger/",
+      },
     ],
-    introducion__title: "Une spec et un stub, efficace non?",
-    introduction__text:
-      "Une fois n'est pas coutume, la team backend m'a demandé de spécifier ce que j'attendai du backend.\n\nCe projet est la réponse : un backend tout simple qui produit une spécification au format openAPI et a vocation a être utilisé comme un stub.",
-    github__url: "https://github.com/Fred-AtelierSalvetat/lcddbackend-django",
-    live_url: "http://ateliersalvetat.pythonanywhere.com/swagger/",
   },
   "next.js": {
     meta__title: "Atelier Salvetat, portfolio - Next.js",
