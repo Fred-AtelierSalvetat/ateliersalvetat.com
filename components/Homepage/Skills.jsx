@@ -9,75 +9,89 @@ const Skills = () => {
   return (
     <section className={`${styles.skills} pagePadding`}>
       <div className={styles.skillframe}>
-        <div className={`${styles.skillbox} padding2rem`}>
-          <Frontend />
-          <h2>
-            <div>{"Développement"}</div>
-            <div style={{ whiteSpace: "nowrap" }}> Front-end</div>
-          </h2>
-
-          <h3>Ma stack</h3>
-          <ul>
-            <li>HTML</li>
-            <li>CSS, CSS modules, Sass, BEM </li>
-            <li>VanillaJS</li>
-            <li>React.js, JSX</li>
-            <li>Next.js</li>
-            <li>Redux</li>
-            <li>RTK Query</li>
-            <li> Typescript</li>
-          </ul>
-          <h3>UI Frameworks</h3>
-          <ul>
-            <li>Bootstrap</li>
-            <li>Material UI</li>
-          </ul>
-          <h3>Tests</h3>
-          <ul>
-            <li>Jest</li>
-            <li> Enzime</li>
-            <li>Chai</li>
-            <li>Sinon</li>
-            <li>React Testing Library</li>
-          </ul>
-          <h3>Outils</h3>
-          <ul>
-            <li>Git, Github, Gitlab</li>
-            <li>AWS Amplify</li>
-          </ul>
+        <div className={`${styles.skillbox} padding5rem`}>
+          <div>
+            <Frontend />
+            <h2>
+              <div>{"Développement"}</div>
+              <div style={{ whiteSpace: "nowrap" }}> Front-end</div>
+            </h2>
+          </div>
+          <div>
+            <h3>Ma stack</h3>
+            <ul>
+              <li>HTML</li>
+              <li>CSS, CSS modules, Sass, BEM </li>
+              <li>VanillaJS</li>
+              <li>React.js, JSX</li>
+              <li>Next.js</li>
+              <li>Redux</li>
+              <li>RTK Query</li>
+              <li> Typescript</li>
+            </ul>
+          </div>
+          <div>
+            <h3>UI Frameworks</h3>
+            <ul>
+              <li>Bootstrap</li>
+              <li>Material UI</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Tests</h3>
+            <ul>
+              <li>Jest</li>
+              <li> Enzime</li>
+              <li>Chai</li>
+              <li>Sinon</li>
+              <li>React Testing Library</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Outils</h3>
+            <ul>
+              <li>Git, Github, Gitlab</li>
+              <li>AWS Amplify</li>
+            </ul>
+          </div>
         </div>
 
         <div className={`${styles.skillbox} padding2rem`}>
-          <AdditionalSkills />
-          <h2>Side skills</h2>
+          <div>
+            <AdditionalSkills />
+            <h2>Side skills</h2>
+          </div>
           <h3>Anglais courant</h3>
-          <h3>Back-End</h3>
-          <ul>
-            <li>{"Design d'API REST"}</li>
-            <li>Python</li>
-            <li>Django</li>
-            <li>Django Rest Framework</li>
-            <li>JWT authentifcation</li>
-            <li>AWS Elastic Beanstalk</li>
-          </ul>
-          <ul>
-            <li>C, C++</li>
-          </ul>
-          <h3>Agile</h3>
-          <ul>
-            <li className={styles.flexCenteredLine}>
-              Scrum master certifié et aguérri
-              <a href="https://www.credly.com/badges/74fb382a-76c8-4867-a350-20b5050658db/public_url">
-                <Image
-                  src={psmBadge}
-                  alt="PSM 1 certification"
-                  layout="responsive"
-                />
-              </a>
-            </li>
-            <li>Product owner expérimenté</li>
-            <li>Conduite de projet</li>
-          </ul>
+          <div>
+            <h3>Back-End</h3>
+            <ul>
+              <li>{"Design d'API REST"}</li>
+              <li>Python</li>
+              <li>Django</li>
+              <li>Django Rest Framework</li>
+              <li>JWT authentifcation</li>
+              <li>AWS Elastic Beanstalk</li>
+            </ul>
+            <ul>
+              <li>C, C++</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Agile</h3>
+            <ul>
+              <li className={styles.flexCenteredLine}>
+                Scrum master certifié et aguérri
+                <a href="https://www.credly.com/badges/74fb382a-76c8-4867-a350-20b5050658db/public_url">
+                  <Image
+                    src={psmBadge}
+                    alt="PSM 1 certification"
+                    layout="responsive"
+                  />
+                </a>
+              </li>
+              <li>Product owner expérimenté</li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>

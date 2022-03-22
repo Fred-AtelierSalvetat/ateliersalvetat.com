@@ -22,6 +22,9 @@
     }
     overflow: hidden;
     .skillbox {
+      display: flex;
+      flex-direction: column;
+      gap: 1em;
       @include medium() {
         max-width: 35rem;
       }
@@ -54,6 +57,9 @@
         margin: 0 auto;
         padding: 0;
         list-style-type: none;
+        li {
+          white-space: nowrap;
+        }
       }
       .flexCenteredLine {
         display: flex;

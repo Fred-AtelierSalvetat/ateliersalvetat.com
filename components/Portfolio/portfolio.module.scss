@@ -1,5 +1,6 @@
 @use "../../sass/params" as *;
 @use "../../sass/mixins" as *;
+@use "../../sass/utility" as *;
 
 .portfolio {
   margin-top: 5vw;
@@ -10,7 +11,6 @@
   .title {
     color: $primary;
     text-align: center;
-    //margin-bottom: $pageVerticalPadding;
   }
   .portfolioIntro {
     display: flex;
@@ -40,7 +40,7 @@
       }
     }
     .swiper {
-      padding-block: 2em; //Padding necessary to avoid 3D coverflow effect overlap hidden
+      @extend .padding2rem; //Padding necessary to avoid 3D coverflow effect overlap hidden
 
       :global(.swiper-pagination) {
         position: relative;
