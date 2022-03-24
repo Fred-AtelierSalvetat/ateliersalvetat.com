@@ -2,65 +2,72 @@
 @use "../../sass/mixins" as *;
 
 .main {
-  margin-top: 5vw;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  @include medium() {
-    flex-direction: row;
-    &:nth-of-type(2n + 1) {
-      flex-direction: row-reverse;
-    }
-  }
-
-  gap: min(5vw, 90px);
-
-  .keywordscontainer {
-    overflow: hidden;
+  justify-content: space-between;
+  .section {
+    padding-block: 5vw;
     display: flex;
-    flex-wrap: wrap;
-    gap: 0.25em;
-    align-items: flex-start;
-    .keyword {
-      margin: 0;
-      //        font-size: 0.8rem;
-      font-weight: bold;
-      padding: 0.5em 1em;
-      border-radius: 20em;
-      color: $white;
-      background: $secondary;
-    }
-  }
-  .picture {
-    width: 80%;
-    height: fit-content;
-    flex: 1 1 30%;
+    flex-direction: column;
+    align-items: center;
     @include medium() {
-      margin: 0;
-    }
-    box-shadow: 0 0 16px 2px fade-out($secondary, 0.4);
-  }
-  .pitch {
-    flex: 1 1 60%;
-    .links {
-      display: grid;
-      grid-template-columns: max-content auto;
-      column-gap: min(3vw, 90px);
-      //justify-items: center;
-    }
-    a {
-      display: flex;
-      align-items: center;
-      text-decoration: none;
-      .txtLink {
-        text-decoration: underline;
-        justify-self: flex-start;
+      flex-direction: row;
+      &:nth-of-type(2n + 1) {
+        flex-direction: row-reverse;
       }
-      svg {
-        margin: 0 auto;
-        display: inline-block;
-        width: min(3vw, 90px);
-        fill: $secondary;
+    }
+    gap: min(5vw, 90px);
+
+    &:not(:last-child) {
+      border-bottom: 3px solid $primary;
+    }
+    .keywordscontainer {
+      overflow: hidden;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.25em;
+      align-items: flex-start;
+      .keyword {
+        margin: 0;
+        //        font-size: 0.8rem;
+        font-weight: bold;
+        padding: 0.5em 1em;
+        border-radius: 20em;
+        color: $white;
+        background: $secondary;
+      }
+    }
+    .picture {
+      width: 80%;
+      height: fit-content;
+      flex: 1 1 30%;
+      @include medium() {
+        margin: 0;
+      }
+      box-shadow: 0 0 16px 2px fade-out($secondary, 0.4);
+    }
+    .pitch {
+      flex: 1 1 60%;
+      .links {
+        display: grid;
+        grid-template-columns: max-content auto;
+        column-gap: min(3vw, 90px);
+        //justify-items: center;
+      }
+      a {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        .txtLink {
+          text-decoration: underline;
+          justify-self: flex-start;
+        }
+        svg {
+          margin: 0 auto;
+          display: inline-block;
+          width: min(3vw, 90px);
+          fill: $secondary;
+        }
       }
     }
   }
