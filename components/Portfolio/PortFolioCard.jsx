@@ -15,30 +15,6 @@ const PortFolioCard = ({
   live = false,
   page,
 }) => {
-  //{ alt, src, title, tags, githublink }
-  // const title = "La chaîne du droit";
-  // const desc =
-  //   "Développement d'UI responsive streaming d'atelier sur la thématique du droit.";
-
-  // //  - Harmonisation des styles des composants : bootstrapisation date & multiselect
-  // //  Implémentation à partir de maquettes Figma"
-
-  // const keywords = [
-  //   "React",
-  //   "Redux",
-  //   "Redux toolkit",
-  //   "Javascript",
-  //   "Typescript",
-  //   "SASS",
-  //   "API REST",
-  //   "Bootstrap",
-  //   "react-hook-form",
-  //   "react-select",
-  //   "drag & drop UI",
-  //   "Django",
-  //   "Python",
-  // ];
-
   return (
     <Link href={`/portfolio/${page}`}>
       <div className={styles.card}>
@@ -67,7 +43,9 @@ const PortFolioCard = ({
                 {keyword}
               </p>
             ))}
-            {keywords?.length > 3 && <p className={`${styles.ellipsis} nomargin`}>...</p>}
+            {keywords?.length > 3 && (
+              <p className={`${styles.ellipsis} nomargin`}>...</p>
+            )}
           </div>
           <h3 className={styles.title}>{title}</h3>
           <div className={styles.description}>{desc}</div>

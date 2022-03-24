@@ -9,7 +9,7 @@ const Skills = () => {
   return (
     <section className={`${styles.skills} pagePadding`}>
       <div className={styles.skillframe}>
-        <div className={`${styles.skillbox} padding5rem`}>
+        <div className={`${styles.skillbox} padding3rem`}>
           <div>
             <Frontend />
             <h2>
@@ -56,7 +56,7 @@ const Skills = () => {
           </div>
         </div>
 
-        <div className={`${styles.skillbox} padding2rem`}>
+        <div className={`${styles.skillbox} padding3rem`}>
           <div>
             <AdditionalSkills />
             <h2>Side skills</h2>

@@ -24,13 +24,15 @@ const PortfolioProjectPitch = ({ title, sections }) => {
             </div>
             <div className={styles.pitch}>
               <h2>{title}</h2>
-              <div className={`${styles.keywordscontainer} marginblock4rem`}>
-                {keywords?.map((keyword) => (
-                  <p key={keyword} className={`${styles.keyword} nomargin`}>
-                    {keyword}
-                  </p>
-                ))}
-              </div>
+              {keywords && !!keywords.length && (
+                <div className={`${styles.keywordscontainer} marginblock4rem`}>
+                  {keywords?.map((keyword) => (
+                    <p key={keyword} className={`${styles.keyword} nomargin`}>
+                      {keyword}
+                    </p>
+                  ))}
+                </div>
+              )}
               <p style={{ whiteSpace: "pre-line" }}>{text}</p>
               <div className={styles.links}>
                 {github__url && (
